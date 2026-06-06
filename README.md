@@ -1,23 +1,35 @@
 # Markoblogo Tap
 
-## How do I install these formulae?
+Homebrew tap for the ABVX/Markoblogo CLI toolchain.
 
-`brew install markoblogo/tap/<formula>`
+## Install
 
-Or `brew tap markoblogo/tap` and then `brew install <formula>`.
+Install directly:
 
-Or, in a `brew bundle` `Brewfile`:
+```bash
+brew install markoblogo/tap/<formula>
+```
+
+Or add the tap once and install by short name:
+
+```bash
+brew tap markoblogo/tap
+brew install <formula>
+```
+
+## Available tools
+
+| Formula | Primary command | What it does | Upstream |
+| --- | --- | --- | --- |
+| `agentsgen` | `agentsgen` | Generates and safely updates `AGENTS.md`, `RUNBOOK.md`, and AI-readable repo artifacts for coding agents. | [markoblogo/AGENTS.md_generator](https://github.com/markoblogo/AGENTS.md_generator) |
+| `abvx-set` | `set-plan-config-apply`, `set-validate-registry` | Orchestration and registry tooling for the SET control plane. | [markoblogo/SET](https://github.com/markoblogo/SET) |
+| `id-protocol` | `idctl` | Portable human-AI context protocol tooling and validators. | [markoblogo/ID](https://github.com/markoblogo/ID) |
+
+## Brewfile example
 
 ```ruby
 tap "markoblogo/tap"
-brew "<formula>"
+brew "agentsgen"
+brew "abvx-set"
+brew "id-protocol"
 ```
-
-## Available formulae
-
-- `agentsgen` - Generate and safely update `AGENTS.md` and `RUNBOOK.md` for coding agents
-- `abvx-set` - SET workflow action helpers and registry tooling
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
