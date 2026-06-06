@@ -16,6 +16,7 @@ brew "<formula>"
 ## Available formulae
 
 - `agentsgen` - Generate and safely update `AGENTS.md` and `RUNBOOK.md` for coding agents
+- `abvx-set` - SET workflow action helpers and registry tooling
 
 ## Documentation
 
