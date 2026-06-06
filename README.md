@@ -13,6 +13,10 @@ tap "markoblogo/tap"
 brew "<formula>"
 ```
 
+## Available formulae
+
+- `agentsgen` - Generate and safely update `AGENTS.md` and `RUNBOOK.md` for coding agents
+
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
